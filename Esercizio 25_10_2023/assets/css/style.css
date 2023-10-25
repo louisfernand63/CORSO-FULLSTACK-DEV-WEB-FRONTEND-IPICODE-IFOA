@@ -1,0 +1,10 @@
+*{
+    /*margin: 0;
+    padding: 0;*/
+    box-sizing: border-box;
+}
+
+header > div {
+    background-color: rgba(201, 179, 114, 0.682);
+    border-top: 2px solid orange;
+}
