@@ -1,0 +1,97 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+  background-image: url(../img/sfondo.png);
+  font-family: 'Poppins', sans-serif;
+}
+
+div.container {
+    width: 450px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(105, 105, 200, 100);
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  padding: auto;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article {
+    background-color: white;
+}
+
+article p {
+    color: grey;
+}
+
+/* TABELLE */
+
+article table {
+    margin: auto;
+    border-collapse: collapse;
+  }
+  
+  table td, table th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  iframe {
+    margin: auto;
+    border-radius: 10%;
+  }
+
+  article section {
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+    width: 430px;
+    border-radius: 2px;
+  }
+
+/* FORM */
+section form {
+    padding: 10px;
+}
+
+section form button {
+    background-color: blue;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside {
+    width: 430px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside div {
+    border-radius: 5px;
+    background-color: gray;
+}
+
+aside div p:last-child{
+    text-align: end;
+}
+/* FOOTER */
