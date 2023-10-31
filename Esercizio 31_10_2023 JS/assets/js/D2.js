@@ -8,8 +8,8 @@
 //let num1 = 5;
 //let num2 = 7;
 
-let num1 = prompt("Inserisci il valore di num1, deve essere un numero intero !");
-let num2 = prompt("Inserisci il valore di num2, deve essere un numero intero !");
+let num1 = Number(prompt("Inserisci il valore di num1, deve essere un numero intero !"));
+let num2 = Number(prompt("Inserisci il valore di num2, deve essere un numero intero !"));
 console.log("num1 = " + num1);
 console.log("num2 = " + num2);
 
@@ -32,7 +32,7 @@ if (num1 > num2) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 /*
 const numb1 = 5;
-let numb2 = prompt("Inserisci un numero intero ! ");
+let numb2 = Number(prompt("Inserisci un numero intero ! "));
 
 console.log(numb1);
 console.log(numb2);
@@ -55,7 +55,7 @@ if (numb2 != numb1) {
 
 /*
 let number1 = 5;
-let number2 = prompt("Inserisci un numero intero ! ");
+let number2 = Number(prompt("Inserisci un numero intero ! "));
 let modulo = number2 % number1;
 
 console.log("number1 = " + number1);
@@ -78,8 +78,8 @@ if (modulo == 0) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /*
-//let numero1 = prompt("Inserisci il valore di numero1, deve essere un numero intero ! ");
-//let numero2 = prompt("Inserisci il valore di numero2, deve essere un numero intero ! ");
+//let numero1 = Number(prompt("Inserisci il valore di numero1, deve essere un numero intero ! "));
+//let numero2 = Number(prompt("Inserisci il valore di numero2, deve essere un numero intero ! "));
 //let addizione = numero1 + numero2;
 let numero1 = 5;
 let numero2 = 7;
@@ -123,7 +123,7 @@ else {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 /*
-let totalShoppingCart = prompt("Inserisci il valore totale del tuo acquisto, deve essere un numero intero ! ");
+let totalShoppingCart = Number(prompt("Inserisci il valore totale del tuo acquisto, deve essere un numero intero ! "));
 
 if (totalShoppingCart != null && totalShoppingCart > 50) {
   console.log("Congratulazioni, ha diritto alla spedizione gratuita !");
@@ -140,9 +140,9 @@ if (totalShoppingCart != null && totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// DA FARE PRIMA DI CONSEGNARE
+//  ANCORA DA FINIRE
 /*
-let totalShoppingCart = prompt("Inserisci il valore totale del tuo acquisto, deve essere un numero intero ! ");
+let totalShoppingCart = Number(prompt("Inserisci il valore totale del tuo acquisto, deve essere un numero intero ! "));
 
 if (totalShoppingCart != null && totalShoppingCart > 50) {
   console.log("Congratulazioni, ha diritto alla spedizione gratuita !");
@@ -161,7 +161,7 @@ if (totalShoppingCart != null && totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 /*
-let variabili = [var1 = prompt("Inserisci il valore di var1, deve essere un numero intero ! "), var2 = prompt("Inserisci il valore di var2, deve essere un numero intero ! "), var3 = prompt("Inserisci il valore di var3, deve essere un numero intero ! ")];
+let variabili = [var1 = Number(prompt("Inserisci il valore di var1, deve essere un numero intero ! ")), var2 = Number(prompt("Inserisci il valore di var2, deve essere un numero intero ! ")), var3 = Number(prompt("Inserisci il valore di var3, deve essere un numero intero ! "))];
 
 console.log("Il valore di var1 è " + var1);
 console.log("Il valore di var2 è " + var2);
@@ -182,7 +182,7 @@ if (variabili) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-/* 
+/* DA MIGLIORARE
 //let dato = prompt("Inserisci il valore di dato ! ");
 let dato = 44;
 
@@ -202,8 +202,8 @@ if (dato === isNaN) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 /*
-let number1 = 2;
-let number2 = prompt("Inserisci un numero intero ! ");
+const number1 = 2;
+let number2 = Number(prompt("Inserisci un numero intero ! "));
 let modulo = number2 % number1;
 
 console.log("number1 = " + number1);
