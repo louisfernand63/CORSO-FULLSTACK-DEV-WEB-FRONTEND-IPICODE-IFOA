@@ -253,7 +253,11 @@
       //let newTable = document.querySelector("#tableArea")
       newTable.createElement("table");
       document.querySelector("#tableArea").appendChild(newTable);
+
+      return newTable;
     }
+    generateTable();
+    console.log(generateTable());
 
     /* ESERCIZIO 12
      Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
