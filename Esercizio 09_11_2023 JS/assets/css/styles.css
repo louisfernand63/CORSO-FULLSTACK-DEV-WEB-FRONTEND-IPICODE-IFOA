@@ -1,0 +1,36 @@
+* {
+  /*margin: 0;
+    padding: 0;*/
+  box-sizing: border-box;
+}
+
+div.container {
+  text-align: center;
+}
+
+div.container h4{
+    text-decoration: underline;
+}
+
+form{
+    margin-top: 5%;
+}
+
+form h1{
+    text-decoration: underline;
+}
+
+form input {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form button {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: green;
+}
