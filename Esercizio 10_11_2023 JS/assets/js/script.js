@@ -1,69 +1,70 @@
 
-let tombola = () => {
-    let table = document.querySelector(".main-board");
+const generateMainBoard = function () {
+    const board = document.querySelector('.main-board');
     for (let i = 0; i < 76; i++) {
-        table.innerHTML += `<div class='cell'>${i + 1}</div>`;
+        board.innerHTML += `<div class='cell'>${i + 1}</div>`;
     }
 }
-tombola();
+/*generateMainBoard();*/
 
-let fillArray = function () {
-    let arr = []
+const fillArray = function () {
+    const arr = [];
     for (let i = 0; i < 76; i++) {
         arr.push(i + 1);
     }
-    return arr
+    return arr;
 }
-fillArray();
+/*fillArray();*/
 
-let getRandomNumber = () => {
-    let randIndex = Math.floor(Math.random() * range.length);
-    let random = range.length.splice(randIndex, 1)[0];
+const getRandomNum = function () {
+    const randIndex = Math.floor(Math.random() * range.length);
+    const random = range.splice(randIndex, 1)[0];
     return random;
 }
-getRandomNumber();
+/*getRandomNum();*/
 
-let generateRandNumber = (range) => {
-    let randNumber = getRandomNumber(range);
-    let randNumDiv = document.querySelector('randNum');
-    randNumDiv.innerText = 'Numero: ' + randNumber;
+const generateRandNumber = function (range) {
+    const random = getRandomNum(range);
+    const randNumDiv = document.getElementById('randNum');
+    randNumDiv.innerText = 'Numero: ' + random;
 
-    let cells = document.querySelectorAll('.main-board .cell');
+    const cells = document.querySelectorAll('.main-board .cell');
     cells[random - 1].classList.add('highlight');
 
-    let userCells = document.querySelectorAll('.user-board .cell')
+    const userCells = document.querySelectorAll('.user-board .cell');
     userCells.forEach((cell) => {
         if (parseInt(cell.innerText) === random) {
-            cell.classList.add('highlight')
+            cell.classList.add('highlight');
         }
     })
 }
-generateRandNumber();
+/*generateRandNumber();*/
 
-let generateUserBoards = () => {
-    let usersNumber = document.querySelector('#usersNumber').value
-    let container = document.querySelector('.container')
+const generateUserBoards = function () {
+    const usersNumber = document.getElementById('usersNumber').value;
+    const container = document.querySelector('.container');
     if (parseInt(usersNumber) > 0) {
         for (let i = 0; i < parseInt(usersNumber); i++) {
-            let range = fillArray()
-            let board = document.createElement('div')
-            board.className = 'board user-board'
+            const range = fillArray();
+            const board = document.createElement('div');
+            board.className = 'board user-board';
             for (let i = 0; i < 24; i++) {
-                let random = getRandomNum(range)
-                board.innerHTML += `<div class='cell'>${random}</div>`
+                const random = getRandomNum(range);
+                board.innerHTML += `<div class='cell'>${random}</div>`;
             }
-            container.appendChild(board)
+            container.appendChild(board);
         }
     }
 }
+/*generateUserBoards();*/
 
 window.onload = function () {
-    tombola();
-    let randBtn = document.querySelector('#randBtn');
-    let range = fillArray();
+    generateMainBoard();
+    const randBtn = document.getElementById('randBtn');
+    const range = fillArray();
     randBtn.addEventListener('click', function () {
-      generateRandNumber(range);
+        generateRandNumber(range);
     })
-    let userBoardBtn = document.querySelector('#userBoardBtn')
+    const userBoardBtn = document.getElementById('userBoardBtn');
     userBoardBtn.onclick = generateUserBoards;
-  }
+}
