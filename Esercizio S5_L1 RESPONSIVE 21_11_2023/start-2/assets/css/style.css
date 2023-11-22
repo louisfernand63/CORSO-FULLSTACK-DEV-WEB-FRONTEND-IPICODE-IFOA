@@ -372,3 +372,7 @@ footer a {
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1401px) {
 }
+
+@media print {
+    
+}
