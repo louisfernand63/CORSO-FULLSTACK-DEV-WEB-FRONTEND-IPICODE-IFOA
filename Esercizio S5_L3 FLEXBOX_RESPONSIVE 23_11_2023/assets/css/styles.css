@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+/***************** 1) Product card **********/
+
+div.card {
+  text-align: center;
+  width: 23%;
+  border-radius: 100px;
+  margin: 10px;
+  display: inline-block;
+  background-color: #fbf7e3;
+  color: #612406;
+}
+
+div.card img {
+  width: 100%;
+  height: 25rem;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+}
+
+div.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  margin: auto;
+}
+
+div.card-body p {
+  margin-top: 7%;
+  margin-right: 8%;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+div.card-body div h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+div.card-body div p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+div.card button {
+  background-color: #f3df85;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5% 15%;
+  margin: 5%;
+  border-radius: 40px;
+  border: none;
+  color: #612406;
+}
+
+/*
+div.card:hover{
+    box-shadow: 0 0 10px 0 black;
+}
+
+div.card h3{
+    margin: 0;
+    padding: 0;
+}
+
+div.card p{
+    margin: 0;
+    padding: 0;
+}
+
+div.card a{
+    margin: 0;
+    padding: 0;
+}
+/* width */
+
+/*::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+/*::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+/*::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container div.card{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+}
+
+.card-container div.card:hover{
+    box-shadow: 0 0 10px 0 black;
+}*/
+
+/***************** 2) Navigation bar **********/
+
+nav {
+  text-align: center;
+  width: 90%;
+  border-radius: 100px;
+  margin: 10px;
+  background-color: #fbf7e3;
+  color: #612406;
+  margin: auto;
+  font-size: 2rem;
+}
+
+div#navbarNav {
+  display: flex;
+  flex-direction: row;
+}
+
+div#navbarNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 3rem;
+  /*padding: 0;
+    overflow: hidden;*/
+}
+
+div#navbarNav ul li a {
+  display: inline-block;
+  margin: 10px;
+  background-color: #f3df85;
+  padding: 1.5rem 2rem;
+  border-radius: 40px;
+}
+
+div#navbarNav a {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  border-radius: 90px;
+  background-color: #f3df85;
+  color: #612406;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+div#navbarNav a.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #612406;
+  background-color: #f3df85;
+  padding: 0 5rem;
+  border-radius: 100px;
+}
+
+div#navbarNav a img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  margin: auto;
+}
+
+div#navbarNav a p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/***************** 3) Flexible article **********/
+/*************** DESKTOP **********/
+div.article {
+  background-color: #fbf7e3;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+div.article div.testo {
+  width: 60%;
+  padding: 20px;
+  text-align: justify;
+}
+
+/*************** MOBILE **********/
+div.article {
+  background-color: #fbf7e3;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+div.article img {
+  width: 60%;
+}
+
+div.article div.testo {
+  width: 60%;
+  padding: 20px;
+  text-align: justify;
+}
+
+/*************** LAYOUT PER TABLETTE (576px a 768px) responsive **********/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  nav {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin: 10px;
+    background-color: #fbf7e3;
+    color: #612406;
+    font-size: 2rem;
+  }
+
+  div#navbarNav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div#navbarNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 3rem;
+    /*padding: 0;
+          overflow: hidden;*/
+  }
+
+  div#navbarNav ul li a {
+    display: inline-block;
+    margin: 10px;
+    background-color: #f3df85;
+    padding: 1.5rem 2rem;
+    border-radius: 40px;
+  }
+
+  div#navbarNav a {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-radius: 90px;
+    background-color: #f3df85;
+    color: #612406;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  div#navbarNav a.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #612406;
+    background-color: #f3df85;
+    padding: 0 5rem;
+    border-radius: 100px;
+  }
+  
+  div#navbarNav a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    margin: auto;
+  }
+  
+  div#navbarNav a p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+}
