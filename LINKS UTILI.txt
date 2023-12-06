@@ -1,0 +1,4 @@
+1. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+2. https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+3. https://www.postman.com/
+4. https://jsonplaceholder.typicode.com/
