@@ -2,3 +2,5 @@
 2. https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 3. https://www.postman.com/
 4. https://jsonplaceholder.typicode.com/
+5. https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
+6. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
